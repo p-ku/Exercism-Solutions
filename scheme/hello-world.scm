@@ -1,1 +1,5 @@
-./hello-world.scm
+(import (rnrs))
+
+(define (hello-world)
+"Hello, World!")
+
