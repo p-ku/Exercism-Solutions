@@ -1,10 +1,6 @@
 (import (rnrs))
 
 (define (leap-year? year)
-  (if (= (remainder year 4) 0)
-    (if (= (remainder year 100) 0)
-      (if (= (remainder year 400) 0)
-        #t
-        #f)
-      #t)
-    #f))
+  (define (divis? x) (= (remainder year x) 0))
+  (or (and (divis? 4) (divis? 100) (divis? 400))
+      (and (divis? 4) (not (divis? 100)))))
