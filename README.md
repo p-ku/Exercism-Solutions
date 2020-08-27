@@ -1,2 +1,2 @@
-# Exercism-Solutions
+# education
 Solutions to code problems on exercism.io
