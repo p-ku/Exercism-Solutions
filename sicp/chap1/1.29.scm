@@ -1,0 +1,10 @@
+(import (rnrs))
+
+(define (f (* x x x)))
+(define (fixn n))
+(define (simp f a b n)
+  (define (even? n) (= (remainder n 2) 0))
+  (define (h (/ (- b a) n)))
+  (cond ((or (= 0 n) (= n  (f a))
+        ((even? n) 
+        (else (+ (* (/ h 3) (simp f a b (- n 1))
