@@ -1,0 +1,40 @@
+.standard
+{
+    margin: auto;
+    padding: 15px;
+}
+
+.home
+{
+    background-color: rgb(255, 255, 200);
+}
+
+.hell
+{
+    background-color: rgb(255, 155, 100);
+}
+
+.mmm
+{
+    background-color: rgb(70, 255, 100);
+}
+
+#moov
+{
+    width:400px;
+	height:400px;
+	position:absolute;
+}
+
+.imag
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.caption
+{
+    text-align: center;
+}

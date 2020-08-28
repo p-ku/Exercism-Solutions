@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table style="width:100%">
+      <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>Total</th>
+        </tr>
+    {% for i in range(count) %}
+        <tr>
+            <td>{{ stock[i]["symbol"] }}</td>
+            <td>{{ stock[i]["name"].strip("\'") }}</td>
+            <td>{{ rows[i]["SUM(shares)"] }}</td>
+            <td>{{ stock[i]["price"] }}</td>
+            <td>{{ summed[i] }}</td>
+        </tr>
+    {% endfor %}
+    <tr>
+        <td>CASH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{ cashamount }}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{ total }}</td>
+    </tr>
+    </table>
+{% endblock %}
