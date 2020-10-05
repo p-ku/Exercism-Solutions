@@ -1,0 +1,8 @@
+*.spec.js
+.eslintrc
+.npmrc
+*.config.js
+*.spec.js
+README.md
+package.json
+package-lock.json
